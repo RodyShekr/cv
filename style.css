@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: inherit;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    font-family: Arial;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+/* Das ist dafür da um beim markieren eines Textes die Farbe  zu ändern*/
+
+*::selection {
+    background-color: yellow;
+    color: green;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: papayawhip;
+    color: red;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+.h1 {
+    text-align: center;
+    margin: 20px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 40px;
+    transition: all .5s linear;
+}
+
+
+/*header*/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: papayawhip;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+#header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: green;
+}
+
+#header .logo span {
+    color: red;
+}
+
+#header .navbar a {
+    color: black;
+    font-size: 2rem;
+    margin: 0 0.8rem;
+}
+
+#header .navbar a:hover {
+    color: red;
+}
+
+
+/*End header*/
+
+
+/*home*/
+
+#home {
+    background-image: url(./image/Home.jpg);
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+}
+
+#home h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#home p {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+/*End home*/
+
+
+/*cv*/
+
+#cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    min-height: 50vh;
+    background-color: #fff;
+}
+
+#cv .swiper-slide {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#cv .swiper-slide h2 {
+    font-size: 5.5rem;
+    padding-left: 5rem;
+}
+
+#cv .swiper-slide h3 {
+    font-size: 4.5rem;
+    padding-bottom: 8rem;
+    padding-left: 5rem;
+}
+
+#cv .swiper-slide p {
+    font-size: 2.5rem;
+    padding: 5rem;
+}
+
+
+/*End cv*/
+
+
+/*Why*/
+
+#why {
+    position: relative;
+}
+
+#why img {
+    padding-right: 5rem;
+    float: left;
+    width: 650px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+#why h2 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#why p {
+    font-size: 1.5rem;
+}
+
+
+/*End Why*/
+
+
+/*contact*/
+
+#contact {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+#contact .maps {
+    width: 100%;
+    height: 600px;
+}
+
+#contact .maps iframe {
+    padding: 2rem;
+}
+
+#contact .E-mail {
+    padding-right: 20rem;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .E-mail a {
+    background-color: papayawhip;
+    color: black;
+    font-size: 5.5rem;
+    float: right;
+}
+
+#contact .E-mail a:hover {
+    background-color: green;
+    color: yellow;
+    border-radius: 20px;
+}
+
+#contact .sms {
+    padding-left: 20rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .sms a {
+    background-color: papayawhip;
+    color: black;
+    font-size: 5.5rem;
+}
+
+#contact .sms a:hover {
+    background-color: green;
+    color: yellow;
+    border-radius: 20px;
+}
+
+
+/*end contact*/
+
+
+/*footer*/
+
+#footer {
+    background-image: linear-gradient(60deg, papayawhip 0%, papayawhip 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: gray;
+}
+
+#footer h2 {
+    color: gray;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .item img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .item img:hover {
+    filter: grayscale(0);
+}
+
+#footer p {
+    color: red;
+    font-size: 12px;
+}
+
+
+/*End footer*/
